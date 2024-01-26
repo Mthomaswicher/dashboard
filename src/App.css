@@ -1,16 +1,5 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  background-color: #111520;
 }
 
 .App-header {
@@ -24,6 +13,11 @@
   color: white;
 }
 
+.row{
+  margin-bottom: 60px;
+}
+
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +29,68 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.rfm-marquee-container{
+  padding: 20px;
+  background-color: #111520;
+}
+
+.rfm-child{
+  padding: 0px 60px 0px 60px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: white;
+}
+
+.hstack{
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.rfm-marquee-container{
+  position: sticky;
+  top: 0;
+}
+
+#tickerheader{
+  margin-bottom: 40px;
+}
+
+.spotifyimg{
+  width: 32px;
+  height: 32px;
+}
+
+
+.cardContainer{
+  padding: 20px;
+  background-color: #1D212B;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.cardContainer a {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+
+
+
+.carouselImage{
+  object-fit: contain;
+  height: 400px;
+}
+
+.tickerImage{
+  height: 75px;
+  object-fit: contain;
+}
+
+
+.react-clock{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
 }
