@@ -4,16 +4,18 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DashboardContainer from './components/DashboardContainer';
 import Clock from 'react-clock';
-import { HashRouter as Router, Link, Route } from "react-router-dom";
+import { HashRouter as Router, Link, Route, Routes } from "react-router-dom";
 
 
 function App() {
   return (
     <div className="App">
-      <Route path="/" element={<DashboardContainer props={Clock}/>}>
+      <Routes>
+      <Route path="/" element={<DashboardContainer props={Clock}/>}/>
+
+      </Routes>
       {/* <DashboardContainer props={Clock}/> */}
 
-      </Route>
     </div>
   );
 }
