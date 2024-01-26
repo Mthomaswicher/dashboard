@@ -25,7 +25,7 @@ useEffect(() => {
 
 return(
     <div className="cardContiner">
-    {isLoading ? <p>Loading...</p> : null}
+    {isLoading ? <p>Loading....,.</p> : null}
     <div className="cardContainer">
     <Carousel controls={false}>
         {news.map((item, i) => {
