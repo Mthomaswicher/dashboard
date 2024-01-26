@@ -4,7 +4,7 @@ import { Stack, Form, Button, InputGroup } from "react-bootstrap"
 
 const Music = () => {
     const CLIENT_ID = "28e015080fdf4d29b21374784cbb1f95";
-    const REDIRECT_URI = "http://localhost:3000";
+    const REDIRECT_URI = "https://mthomaswicher.github.io/dashboard/";
     const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
     const RESPONSE_TYPE = "token";
     const SCOPE = "user-read-currently-playing";

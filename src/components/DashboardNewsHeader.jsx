@@ -6,6 +6,7 @@ import Marquee from "react-fast-marquee";
 const DashboardNewsHeader= (props)=>{
     const [song, setSong] = useState([]);
     const [tokens, setTokens] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
 
 
     let token = window.localStorage.getItem("token")
@@ -20,6 +21,7 @@ const DashboardNewsHeader= (props)=>{
         )
           .then((response) => response.json())
           .then((data) => setSong(data))
+          .then(setIsLoading(false))
           .then(setTokens(true));
       }, [token]);
       
@@ -27,6 +29,7 @@ const DashboardNewsHeader= (props)=>{
 return (
   
   <Marquee>
+    {isLoading ? <p>Loading...</p> : null}
     <div><img className="tickerImage" src={song?.item?.album?.images[0].url}></img></div>
     {song?.item?.name + " " + "-" + song?.item?.artists.map(item => item.name)} 
 </Marquee>)
